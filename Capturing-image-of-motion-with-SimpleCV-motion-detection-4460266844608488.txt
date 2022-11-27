@@ -1,0 +1,9 @@
+class Camera(FrameSource):
+    """
+    **SUMMARY**
+    The Camera class is the class for managing input from a basic camera.  Note
+    that once the camera is initialized, it will be locked from being used
+    by other processes.  You can check manually if you have compatible devices
+    on linux by looking for /dev/video* devices.
+img = cam.getImage()
+img.save("motion.jpg")
